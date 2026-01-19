@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: gg-builders-website
+    name: gg-constructions
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: build

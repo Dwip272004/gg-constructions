@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gg-builders-website
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    pullRequestPreviewsEnabled: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
